@@ -1,0 +1,65 @@
+/* heigth and width to set elements heigth and width */
+/* set 100% width to cover horizontal area */
+/* height and width property does not include padding ,margin or border */
+/* values can be in px,%, auto ,initial and inherit */
+.width {
+    border: 3px solid green;
+    width: auto;
+    margin: auto;
+    padding: 10px;
+}
+
+.width1 {
+    border: 3px solid chocolate;
+    height: 50px;
+    padding: 5px;
+    width: 99%;
+    overflow: hidden;
+}
+
+.width2 {
+    border: 3px solid lawngreen;
+    height: 50px;
+    width: initial;
+    padding: 5px;
+    overflow: hidden;
+}
+
+/* max-width property is used to set the maximum width of element */
+/* if we add max-width then for smaller screen horizontal scroll bar will be added for element */
+/* here for fixed width scroll-bar will appear */
+/* there are several properties like max-width min-width max-height min-height */
+.width3 {
+    border: 3px dashed goldenrod;
+    height: 200px;
+    width: 700px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.width4 {
+    border: 3px solid violet;
+    height: 200px;
+    max-width: 700px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+/* Box-model */
+/* 1.margin 2.border 3.padding 4.content */
+.box {
+    border: 3px solid saddlebrown;
+    margin: 10px;
+    padding: 10px;
+    width: 600px;
+    outline: solid;
+    outline-offset: 3px;
+}
+/* outline is a line drawn outside the element's border */
+/* you can add width style and color like border in outline */
+/* outline-offset add space between outline and border */
+
+/* for total width you must add border and padding */
+/* Total element width = width + left padding + right padding + left border + right border */
+/* Total element height = height + top padding + bottom padding + top border + bottom border */
+/* margin is not included in box total size */

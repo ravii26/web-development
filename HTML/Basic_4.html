@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <title> element:
+        defines a title in the browser toolbar
+        provides a title for the page when it is added to favorites
+        displays a title for the page in search engine-results -->
+    <title>Document</title>
+
+    <!-- For favicon -->
+    <!-- A favicon is a small image displayed next to the page title -->
+    <!-- A favicon is a small image, so it should be a simple image with high contrast. -->
+    <link rel="icon" type="image/x-icon" href="/images/temp1.jpeg">
+    <style>
+
+        /* Table borders attributes */
+        /* values of border-style attributes
+        dotted     
+        dashed     
+        solid     
+        double     
+        groove     
+        ridge     
+        inset     
+        outset     
+        none     
+        hidden      */
+
+        table,th,td{
+        /* give border values in form of size style color and works for th,td*/
+        border: 1px solid black;
+
+        /* To collapse border */
+        /* border-collapse: collapse; */
+
+        /* give radius for rounded corners */
+        /* border-radius: 10px; */
+
+        }
+        .c1{
+            background-color: bisque;
+            /* line style */
+            border-style: dotted;
+        }
+        /* For styling rows use tr and for styling columns use td,th or you can use both*/
+        .c2 tr:nth-child(odd) {
+        background-color: #D6EEEE;
+        }
+    </style>
+</head>
+<body>
+    <!-- Table -->
+    <!-- everything inside <table> tag is contains in cells-->
+    <!-- <tr> stands for table row -->
+    <!-- <td> stands for table column-->
+    <!-- <th> stands for table header-->
+    <table class="c1">
+        <tr>
+          <th>Person 1</th>
+          <th>Person 2</th>
+          <th>Person 3</th>
+        </tr>
+        <tr>
+          <td>Emil</td>
+          <td>Tobias</td>
+          <td>Linus</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>14</td>
+          <td>10</td>
+        </tr>
+    </table>
+
+    <!-- style attribute with the width or height properties to specify the size of a table, row or column. -->
+    <!-- To set the size of a specific column, add the style attribute on a <th> or <td> element  -->
+    <!-- To set the height of a specific row, add the style attribute on a table row element -->
+    <!-- width for columns and height for rows -->
+    <!-- Table headers are defined with th elements -->
+      <table style="width:100%" class="c2">
+        <tr>
+          <th style="width:70%">Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+        <tr style="height: 50px;">
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+      </table>
+
+      <!-- By default headers are bold and centered -->
+      <!-- Vertical Table Headers -->
+      <table>
+        <tr>
+          <th>Firstname</th>
+          <td>Jill</td>
+          <td>Eve</td>
+        </tr>
+        <tr>
+          <th>Lastname</th>
+          <td>Smith</td>
+          <td>Jackson</td>
+        </tr>
+        <tr>
+          <th>Age</th>
+          <td>94</td>
+          <td>50</td>
+        </tr>
+      </table>
+
+      <!-- To add a caption to a table, use the <caption> tag -->
+        <table style="width:100%">
+            <caption>Monthly savings</caption>
+            <tr>
+              <th>Month</th>
+              <th>Savings</th>
+            </tr>
+            <tr>
+              <td>January</td>
+              <td>$100</td>
+            </tr>
+            <tr>
+              <td>February</td>
+              <td>$50</td>
+            </tr>
+          </table>
+
+        <!-- HTML Table - Cell Padding (Only works for th,td)-->
+        <!-- Cell padding is the space between the cell edges and the cell content -->
+        <!-- There are many values like padding-top/bottom/right/left -->
+        <table >
+            <tr>
+              <th style="padding: 15px;">Firstname</th>
+              <td>Jill</td>
+              <td>Eve</td>
+            </tr>
+            <tr>
+              <th>Lastname</th>
+              <td style="padding-left: 20px;">Smith</td>
+              <td>Jackson</td>
+            </tr>
+            <tr>
+              <th>Age</th>
+              <td style="padding-top: 20px;">94</td>
+              <td>50</td>
+            </tr>
+          </table>
+
+          <!-- Cell Spacing -->
+          <!-- Cell spacing is the space between each cell (by default 2px)-->
+          <!-- use the CSS border-spacing property on the table element -->
+          <table style="border-spacing:15px">
+          <tr>
+            <th>Person 1</th>
+            <th>Person 2</th>
+            <th>Person 3</th>
+          </tr>
+          <tr>
+            <td>Emil</td>
+            <td>Tobias</td>
+            <td>Linus</td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>14</td>
+            <td>10</td>
+          </tr>
+        </table>
+
+        <!-- HTML Table Colspan & Rowspan -->
+        <!-- HTML tables can have cells that span over multiple rows and/or columns -->
+        <!-- Mostly use in th,td -->
+        <table>
+            <tr>
+              <th colspan="2">Name</th>
+              <th>Age</th>
+            </tr>
+            <tr>
+              <td>Jill</td>
+              <td>Smith</td>
+              <td>43</td>
+            </tr>
+            <tr>
+              <td>Eve</td>
+              <td>Jackson</td>
+              <td>57</td>
+            </tr>
+          </table>
+        <table>
+            <tr>
+              <th>Name</th>
+              <td>Jill</td>
+            </tr>
+            <tr>
+              <th rowspan="2">Phone</th>
+              <td>555-1234</td>
+            </tr>
+            <tr>
+              <td>555-8745</td>
+          </tr>
+          </table>
+
+          <!-- <colgroup> element is used to style specific columns of a table. -->
+
+            <!-- allowed css in colgroup width,visibility,background,border -->
+            <table style="width: 100%;">
+                <colgroup>
+                  <col span="3" style="background-color: #1f6464">
+                </colgroup>
+                <tr>
+                <th>MON</th>
+                <th>TUE</th>
+                <th>WED</th>
+                <th>THU</th>
+                </tr>
+                <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                </tr>
+                <tr>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                </tr>
+                <tr>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                </tr>
+                </table>
+                <table style="width: 100%;">
+                    <colgroup>
+                      <col span="2" style="background-color: #D6EEEE">
+                      <col span="3" style="background-color: pink">
+                    </colgroup>
+                  <tr>
+                  <th>MON</th>
+                  <th>TUE</th>
+                  <th>WED</th>
+                  <th>THU</th>
+                  <th>FRI</th>
+                  <th>SAT</th>
+                  <th>SUN</th>
+                  </tr>
+                  <tr>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                  </tr>
+                  <tr>
+                  <td>8</td>
+                  <td>9</td>
+                  <td>10</td>
+                  <td>11</td>
+                  <td>12</td>
+                  <td>13</td>
+                  <td>14</td>
+                  </tr>
+                  <tr>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>17</td>
+                  <td>18</td>
+                  <td>19</td>
+                  <td>20</td>
+                  <td>21</td>
+                  </tr>
+                </table>
+</body>
+</html>

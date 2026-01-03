@@ -1,0 +1,63 @@
+/* CSS variables */
+/* CSS variables can have a global or local scope */
+
+/* To create a variable with global scope, declare it inside the :root selector */
+/* To create a variable with local scope, declare it inside the selector that is going to use it */
+
+:root {
+    --blue: blue;
+    --size: 75px;
+}
+
+h1 {
+    color: var(--blue);
+    font-size: var(--size);
+}
+
+h2 {
+    color: var(--blue);
+    /* declare local variable */
+    /* it will override global variable */
+    /* or you can create new local variable and use it in specific selector */
+    --size: 60px;
+    font-size: var(--size);
+}
+
+/* can change variable value in js or media queries */
+/* .container{
+    --font-size:25px;
+} */
+/* @media screen and (min-width: 450px) {
+  .container {
+    --fontsize: 50px;
+  }
+  :root {
+    --blue: lightblue;
+  }
+} */
+
+
+/* box-sizing property allows us to include the padding and border in an element's total width and height */
+/* width + padding + border = actual width of an element
+height + padding + border = actual height of an element */
+.div1 {
+    width: 300px;
+    height: 100px;
+    border: 1px solid blue;
+}
+
+.div2 {
+    width: 300px;
+    height: 100px;
+    padding: 50px;
+    border: 1px solid red;
+}
+/* with box-sizing property */
+/* Applying this to all elements is safe and wise */
+.div3 {
+    width: 300px;
+    height: 100px;
+    padding: 50px;
+    border: 1px solid red;
+    box-sizing: border-box;
+}

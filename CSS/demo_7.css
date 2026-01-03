@@ -1,0 +1,45 @@
+/* border for main table ,th and td */
+table,table td,table th {
+    border: 1px solid;
+}
+
+/* width can occupy whole page horizontally */
+/* you can use border-collapse to remove collapsing of borders */
+/* you can use height and width property individually for table,th,tr,td */
+.table2,.table2 td,.table2 th,.table2 tr:nth-child(even){
+    border: 1px solid;
+    width: 100%;
+    border-collapse: collapse;
+    height: 50px;
+}
+
+/* stripped table by tr:nth-child(even) */
+.table2 tr:nth-child(even){
+    background-color: #ddd;
+}
+
+/* text-align -- center left right*/
+/* vertical-align -- top,bottom,middle */
+/* you can also add margin padding  */
+/* border-bottom for horizontal devider */
+.table3,.table3 td,.table3 th{
+    width: 50%;
+    text-align: center;
+    height: 50px;
+    vertical-align: bottom;
+    padding: 10px;
+    border: none;
+    border-collapse: collapse;
+    border-bottom: 1px solid #ddd;
+}
+
+/* :hover to make it look good */
+.table3 tr:hover{
+    background:#fcf8e3;
+}
+
+/* for responsive table */
+/* add div class and then overflow-x:auto */
+div{
+    overflow-x: auto;
+}

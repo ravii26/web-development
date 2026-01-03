@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+        body {background-color: powderblue;}
+        h1   {color: blue;}
+        p    {border: 2px solid powderblue;
+        padding: 30px;
+        margin: 50px;}
+        h2 {
+        color: blue;
+        font-family: verdana;
+        font-size: 300%;
+        }
+
+        /* To give links different colors */
+        a:link {
+        color: green;
+        background-color: transparent;
+        text-decoration: none;
+        }
+
+        a:visited {
+        color: pink;
+        background-color: transparent;
+        text-decoration: none;
+        }
+
+        a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+        }
+
+        a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+        }
+        </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Use of Bookmark -->
+    <h2 id="C4">Chapter 4</h2>
+
+    <!-- CSS stands for Cascading Style Sheets -->
+    <!-- used to format the layout of a webpage -->
+    <!-- cascading means that a style applied to a parent element will also apply to all children elements -->
+
+    <!-- CSS can be added to HTML documents in 3 ways: -->
+
+    <!-- Inline - by using the style attribute inside HTML elements
+    Internal - by using a <style> element in the <head> section
+    External - by using a <link> element to link to an external CSS file -->
+
+    <!-- inline CSS is used to apply a unique style to a single HTML element -->
+    <!-- inline CSS uses the style attribute -->
+    <p style="color:red;">A red paragraph.</p>
+
+    <!-- internal CSS is used to define a style for a single HTML page -->
+    <!-- defined in the <head> section of an HTML page, within a <style> element -->
+    
+    <!-- external style sheet is used to define the style for many HTML pages -->
+    <!-- To use an external style sheet, add a link to it in the <head> section of each HTML page -->
+
+    <!-- Use the HTML style attribute for inline styling
+    Use the HTML <style> element to define internal CSS
+    Use the HTML <link> element to refer to an external CSS file
+    Use the HTML <head> element to store <style> and <link> elements
+    Use the CSS color property for text colors
+    Use the CSS font-family property for text fonts
+    Use the CSS font-size property for text sizes
+    Use the CSS border property for borders
+    Use the CSS padding property for space inside the border
+    Use the CSS margin property for space outside the border -->
+
+    <h2>This is heading 2</h2>
+
+    <!-- Anchor tag -->
+    <!-- HTML links are hyperlinks. -->
+    <!-- <a> tag defines a hyperlink -->
+    <!-- most important attribute of the <a> element is the href attribute, which indicates the link's destination -->
+    <a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+
+    <!-- An unvisited link is underlined and blue
+    A visited link is underlined and purple
+    An active link is underlined and red --> 
+
+    <!-- target attribute specifies where to open the linked document -->
+    <!-- _self - Default. Opens the document in the same window/tab as it was clicked
+    _blank - Opens the document in a new window or tab
+    _parent - Opens the document in the parent frame -->
+    <!-- _top - Opens the document in the full body of the window -->
+    <!-- absolute URL (a full web address) and relative url (a link to a page within the same website) -->
+
+    <!-- To use an image as a link, just put the <img> tag inside the <a> tag -->
+    <a href="default.asp">
+        <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+    </a>
+
+    <!-- Link to an Email Address Use mailto: inside the href-->
+    <a href="mailto:someone@example.com">Send email</a>
+
+    <!-- Button as a Link -->
+    <button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+    <!-- title attribute specifies extra information about an element -->
+    <!-- most often shown as a tooltip text when the mouse moves over the element -->
+    <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+    <!-- links can be used to create bookmarks -->
+    <!-- o create a bookmark - first create the bookmark, then add a link to it. -->
+    <!-- First, use the id attribute to create a bookmark and add a link to the bookmark-->
+    <a href="#C4">Jump to Chapter 4</a>
+
+</body>
+</html>

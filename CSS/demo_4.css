@@ -1,0 +1,93 @@
+/* we can add color and background-color to text and element's background */
+/* text-align for horizontal text allignment (left, right , center)*/
+/* text-align-last set how to set lastline of text */
+div {
+    margin: 10px;
+    padding: 5px;
+}
+
+/* text-decoration */
+/* includes text-decoration-line / style / color / thickness */
+/* we can use it as shorthand or individual */
+/* line : overline underline line-through  */
+/* style : solid dashed dotted  */
+/* you can set text-decoration to none */
+.text1 {
+    color: saddlebrown;
+    background-color: lightpink;
+    text-decoration: dashed overline blue 3px;
+}
+
+/* text-transform */
+/* uppercase lowercase or capitalize*/
+.text2 {
+    text-align: right;
+    text-transform: uppercase;
+}
+
+
+.text3 {
+    text-align: center;
+
+}
+
+/* if we can set text-align: justify then text will be streached so each line has equal width and margins */
+.text4 {
+    color: aqua;
+    text-align: justify;
+    text-align-last: left;
+}
+
+/* to change the direction of text */
+.text5 {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+/* vertical-align property sets the vertical alignment of an element */
+.img1 {
+    vertical-align: text-bottom;
+}
+
+.img2 {
+    vertical-align: text-top;
+}
+
+.img3 {
+    vertical-align: sub;
+}
+
+.img4 {
+    vertical-align: super;
+}
+
+/* propeties on spacing */
+/* text-indent -- leave space on staring of paragraph*/
+/* letter-spacing -- leave space between letters*/
+/* line-height -- give height to lines like 0.7 and 1.6*/
+/* word-spacing -- leave space between words*/
+/* white-spacing -- specifies how white-space inside an element is handled like nowrap does not wrap text on resizing browser */
+
+/* text-shadow */
+/* text-shadow: 2px 2px 5px blue -- first 2 px are for effect 3rd px for blur */
+p{
+    font-size: 40px;
+}
+.shadow1 {
+    text-shadow: 2px 2px 8px red;
+}
+
+.shadow2 {
+    text-shadow: 0 0 3px #FF0000;
+    ;
+}
+
+.shadow3 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000
+}
+
+.shadow4 {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}

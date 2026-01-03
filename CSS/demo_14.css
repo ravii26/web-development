@@ -1,0 +1,136 @@
+/* border-radius */
+/* You can apply it to image,element with border and without border */
+/* it is a short-hand property of border-top-left-radius / top-right / bottom-right / bottom-left */
+
+/* An RGBA color value is specified with: rgba(red, green, blue, alpha). 
+The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque) */
+/* #p1 {background-color: rgba(255, 0, 0, 0.3);}  /* red with opacity */
+
+/* HSL stands for Hue, Saturation and Lightness */
+/* There is also HSLA system */
+/* Hue is degree 0 (or 360) is red 120 is green 240 is blue */
+/* Saturation is a percentage value: 100% is the full color.
+Lightness is also a percentage; 0% is dark (black) and 100% is white */
+/* color:hsl(0, 100%, 30%); */
+/* CSS opacity property sets the opacity for the whole element so this alpha property is used */
+
+/* border-image */
+/* this property is used to override normal border around an element */
+/* border-image property takes the image and slices it into nine sections, like a tic-tac-toe board */
+/* places the corners at the corners, and the middle sections are repeated or stretched as you specify */
+/* It need border property also set */
+/* it is short-hand of border-image-source, border-image-slice, border-image-width, border-image-outset and border-image-repeat */
+#borderimg1 {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(images/border.png) 50 round;
+}
+
+#borderimg2 {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(images/border.png) 20% round;
+}
+
+#borderimg3 {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(images/border.png) 30% round;
+}
+
+/* CSS Multiple Backgrounds */
+/* different background images are separated by commas, and the images are stacked on top of each other, where the first image is closest to the viewer */
+/* can also be written as background: url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat; */
+/* can also add multiple size by background-size in single attribute */
+#example1 {
+    background-image: url("images/temp1.jpeg"), url("images/temp2.jpeg");
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
+    color: yellow;
+}
+
+/* background-size property allows you to specify the size of background images */
+/* By length or keywords like cover contain */
+#example2 {
+    border: 1px solid black;
+    background: url("images/temp7.jpeg");
+    background-size: 100px 80px;
+    background-repeat: no-repeat;
+    padding: 15px;
+    color: orange
+}
+
+/* contain keyword scales the background image to be as large as possible */
+.div1 {
+    border: 1px solid black;
+    height: 120px;
+    width: 150px;
+    background: url("images/temp4.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* cover keyword scales the background image so that the content area is completely covered */
+.div2 {
+    border: 1px solid black;
+    height: 120px;
+    width: 150px;
+    background: url("images/temp8.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Can also add full size background image to whole page or element */
+/* background: url(img_man.jpg) no-repeat center fixed; */
+/* can apply this property to html tag */
+/* You could also use different background properties on a <div> to create a hero image
+ (a large image with text), and place it where you want */
+
+/* background-origin property specifies where the background image is positioned */
+/* border-box padding-box(default) and content-box */
+#m1 {
+    border: 10px solid black;
+    padding: 35px;
+    background: url("images/temp6.jpeg");
+    background-repeat: no-repeat;
+}
+
+#m2 {
+    border: 10px solid black;
+    padding: 35px;
+    background: url("images/temp4.jpeg");
+    background-repeat: no-repeat;
+    background-origin: border-box;
+}
+
+#m3 {
+    border: 10px solid black;
+    padding: 35px;
+    background: url("images/temp9.jpeg");
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+
+
+/* background-clip property specifies the painting area of the background */
+/* border-box(default) padding-box and content-box */
+#m4 {
+    border: 10px dotted black;
+    padding: 35px;
+    background: yellow;
+}
+
+#m5 {
+    border: 10px dotted black;
+    padding: 35px;
+    background: yellow;
+    background-clip: padding-box;
+}
+
+#m6 {
+    border: 10px dotted black;
+    padding: 35px;
+    background: yellow;
+    background-clip: content-box;
+}

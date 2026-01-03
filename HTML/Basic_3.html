@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(images/temp3.jpeg);
+        }
+    </style>
+</head>
+<body>
+    <!-- Images -->
+    <img src="images/temp1.jpeg" alt="Italian Trulli" title="One">
+    <!-- Images are not technically inserted into a web page; images are linked to web pages -->
+    <!-- <img> tag is empty tag -->
+    <!-- src - Specifies the path to the image
+    alt - Specifies an alternate text for the image -->
+
+    <!-- style attribute to specify the width and height of an image -->
+    <img src="images/temp2.jpeg" alt="Girl in a jacket" style="width:150px;height:150px;" title="Two">
+
+    <!-- you can use the width and height attributes -->
+    <img src="images/temp3.jpeg" alt="Girl in a jacket" width="150" height="150" title="Three">
+
+    <!-- HTML allows animated GIFs -->
+
+    <!-- To use an image as a link, put the <img> tag inside the <a> tag -->
+        <a href="default.asp">
+            <img src="images/temp4.jpeg" alt="HTML tutorial" style="width:150px;height:150px;" title="Four">
+        </a>
+
+    <!-- Use the CSS float property to let the image float to the right or to the left of a text -->
+    <img src="images/temp5.jpeg" alt="Girl in a jacket" style="float:right;width:150px;height:150px;" title="Five">FF
+
+    <!-- Image Map -->
+    <!-- With HTML image maps, you can create clickable areas on an image -->
+    <!--  The areas are defined with one or more <area> tags. -->
+    <!-- must add a usemap attribute -->
+    <!-- usemap value starts with a hash tag # followed by the name of the image map -->
+    <img src="images/workplace.jpg" alt="Workplace" usemap="#workmap">
+    <!-- add a <map> element -->
+    <map name="workmap">
+    <!-- add the clickable areas by <area> element -->
+    <!-- must define the shape of the clickable area by giving value to shape attribute like rect,circle,poly,default-->
+    <area shape="rect" coords="34, 44, 270, 350" href="computer.htm">
+    <area shape="circle" coords="337, 300, 44" href="coffee.htm">
+    </map>
+
+    <!-- Background Image -->
+    <!-- A background image can be specified for almost any HTML element -->
+    <!-- style attribute and the CSS background-image property -->
+    <pre style="background-image: url('images/temp6.jpg'); color:yellow; background-repeat: no-repeat">
+Hello There
+    A
+    B
+    C
+    D
+    Z
+    </pre>
+    <!-- For entire page  you must specify the background image on the <body> element -->
+
+    <!-- Background repeat -->
+    <!-- If the background image is smaller than the element, the image will repeat itself, horizontally and vertically, until it reaches the end of the element -->
+    <!-- To avoid repetation add background-repeat: no-repeat in style attribute -->
+
+    <!-- background-size attribute of style element -->
+    <!-- background-size:cover (To cover whole element) or background-size:100% 100% (To stretch whole element) -->
+
+    <!-- <picture> element allows you to display different pictures for different devices or screen sizes. -->
+    <!-- <picture> element contains one or more <source> elements with srcset attribute -->
+    <!-- <source> element has a media attribute that defines when the image is the most suitable -->
+    <picture>
+        <source media="(min-width: 650px)" srcset="images/temp7.jpeg">
+        <source media="(min-width: 465px)" srcset="images/temp8.jpeg">
+        <img src="images/temp9.jpeg" title="Six">
+    </picture>
+</body>
+</html>

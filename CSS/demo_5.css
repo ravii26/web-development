@@ -1,0 +1,28 @@
+/* fonts */
+/* font-family -- serif sans-serif monospace cursive fantacy*/
+
+/* websafe fonts - arial verdana tahoma*/
+/* Web safe fonts are fonts that are universally installed across all browsers and devices */
+/* you should write more than one font in case of if one isn't work than other will work *
+
+/* font-style mostly used to specify italic text */
+/* font-weight mostly used to specify bold weight */
+/* font-variant mostly used to specify small caps */
+
+/* font-size */
+/* font-size can be in pixel, em or vw(viewport width)*/
+/* em is better for user to change size and 1vw means 1% of viewport width*/
+.font{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: justify;
+    margin:5px;
+}
+/* font pairing is very important in any website so choose fonts wisely */
+
+/* You can use font shorthand */
+p.b {
+    font: italic small-caps bold 12px/30px Georgia, serif;
+  }

@@ -1,0 +1,128 @@
+/* display:inline-block allows to set a width and height on the element */
+/* Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element */
+/* One common use for display: inline-block is to display list items horizontally instead of vertically */
+
+.nav {
+    background-color: yellowgreen;
+    list-style-type: none;
+    text-align: left;
+}
+
+.nav li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.nav li a{
+    color: #000;
+}
+/* To horizontally center a block element (like <div>), use margin: auto; */
+/* Center aligning has no effect if the width property is not set (or set to 100%) */
+
+/* To center an image, set left and right margin to auto and make it into a block element */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* css combinators */
+/* descendant selector (space)
+descendant selector matches all elements that are descendants of a specified element
+child selector (>)
+child selector selects all elements that are the children of a specified elemen
+adjacent sibling selector (+)
+adjacent sibling selector is used to select an element that is directly after another specific element
+general sibling selector (~) 
+general sibling selector selects all elements that are next siblings of a specified element */
+div p {
+    background-color: yellow;
+}
+
+div~p {
+    background-color: bisque;
+}
+
+div+p {
+    background-color: blueviolet;
+}
+
+div>p {
+    background-color: brown;
+}
+
+
+/* pseudo classes */
+/* anchor pseudo classes */
+/* a:link(unvisited) a:visited a:hover a:active */
+/* can be combined with html classes */
+/* hover on one element to show another */
+/* there are many pseudo elements you can choose according to your need */
+.ele1 {
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+}
+
+.ele2:hover .ele1 {
+    display: block;
+}
+
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+/* pseudo-element is used to style specified parts of an element. */
+/* ::first-line pseudo-element is used to add a special style to the first line of a text */
+/* ::first-letter */
+/* you can use multiple pseudo element on any property */
+.pseudo::first-line {
+    color: #ff0000;
+    font-variant: small-caps;
+}
+
+.pseudo::first-letter {
+    color: blue;
+}
+
+/* ::before pseudo-element can be used to insert some content before the content of an element */
+h1::before {
+    content: url(images/temp1.jpeg);
+}
+
+/* ::after pseudo-element can be used to insert content after an element */
+h1::after {
+    content: url(images/temp1.jpeg);
+}
+
+/* ::selection pseudo-element matches the portion of an element that is selected by a user. */
+::selection {
+    color: red;
+    background: yellow;
+    cursor: pointer;
+    outline: violet;
+}
+
+/* opacity */
+/* this can make text also blur so use another css block to display text */
+/* or you can use rgba property */
+img:hover {
+    opacity: 0.7
+}

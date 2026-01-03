@@ -1,0 +1,62 @@
+/* Icons can easily be added to your HTML page, by using an icon library like font awesome*/
+
+/* Links */
+/* a:hover MUST come after a:link and a:visited
+a:active MUST come after a:hover */
+* {
+    margin: 10px;
+}
+
+i {
+    margin: 10px;
+    padding: 10px;
+}
+
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: yellow;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+    text-decoration: none;
+    background-color: lightgreen;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+/* list-style */
+/* used to apply styles to lists or you can use shorthand */
+/* list-style-type */
+/* list-style-position */
+/* list-style-image */
+ul.list1 {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+ul.list2 {
+    list-style-type: circle;
+    list-style-position: outside;
+}
+
+ol.list1 {
+    list-style: square outside;
+}
+
+ol.list2 {
+    list-style-image: url(images/temp3.jpeg);
+    background: #cce5ff;
+    color: darkblue;
+    margin: 5px;
+    /* You can use but you have to choose picture according to size */
+}

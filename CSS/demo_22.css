@@ -1,0 +1,105 @@
+/* CSS pagination */
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.pagination a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Breadcrumbs */
+ul.breadcrumb {
+    padding: 8px 16px;
+    list-style: none;
+    background-color: #eee;
+}
+
+ul.breadcrumb li {
+    display: inline;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+    color: green;
+}
+
+
+/* Multiple columns */
+/* to get output like newspaper */
+.newspaper {
+    /* column-count property specifies the number of columns an element should be divided into */
+    column-count: 3;
+    /* gap between them */
+    column-gap: 40px;
+    /* column-devider line properties */
+    column-rule: 1px solid lightblue;
+    /* can also use column width property */
+}
+
+h2 {
+    /* to specify how many columns an element should span across */
+    column-span: all;
+}
+
+/* resize property */
+/* make element resizable */
+.rs1 {
+    border: 2px solid;
+    padding: 20px;
+    width: 300px;
+    resize: horizontal;
+    overflow: auto;
+}
+
+.rs2 {
+    border: 2px solid;
+    padding: 20px;
+    width: 300px;
+    resize: vertical;
+    overflow: auto;
+}
+
+.rs3 {
+    border: 2px solid;
+    padding: 20px;
+    width: 300px;
+    resize: both;
+    overflow: auto;
+}
+
+/* outline-offset property to add space between the border and the outline: */
+div.ex1 {
+    margin: 20px;
+    border: 1px solid black;
+    outline: 4px solid red;
+    outline-offset: 15px;
+}

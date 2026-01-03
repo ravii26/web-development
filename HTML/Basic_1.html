@@ -1,0 +1,180 @@
+<!-- HYPERTEXT MARKUP LANGUAGE -->
+<!-- HTML is the standard markup language for creating Web pages. -->
+<!-- HTML tags are Not Case Sensitive -->
+<!-- This is how you can comment in html file -->
+
+<!-- The <!DOCTYPE html> declaration defines that this document is an HTML5 document -->
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- lang attribute inside the <html> tag, to declare the language of the Web page -->
+<!-- <html> element is the root element of an HTML page -->
+
+<head>
+      <!-- <head> element contains meta information about the HTML page -->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <!-- <title> element specifies a title for the HTML page (which is shown in the browser's title bar -->
+</head>
+
+<body>
+      <!-- <body> element defines the document's body, and is a container for all the visible contents -->
+      <!-- browser will automatically remove any extra spaces and lines when the page is displayed -->
+
+      <!-- Elements(Tags) -->
+            <!-- HTML element is everything from the start tag to the end tag -->
+            <!-- HTML element is defined by a start tag, some content, and an end tag -->
+            <!-- elements with no content are called empty elements -->
+            <!-- Empty elements do not have an end tag! -->
+            <!-- elements can be nested -->
+            <!-- Never Skip the End Tag -->
+      
+      <!-- Attributes -->
+            <!-- attributes provide additional information about HTML elements. -->
+            <!-- always specified in the start tag -->
+            <!-- <a> tag has href attribute to specify the URL -->
+            <!-- <img> tag has src attribute to give path of image -->
+            <!-- Two ways for url 1.Absolute(direct link) 2.Relative(link related to current page)-->
+            <!-- <img> tag should also contain the width and height attributes, which specify the width and height of the image (in pixels) -->
+            <!-- alt attribute for the <img> tag specifies an alternate text for an image -->
+            <!-- style attribute is used to add styles to an element, such as color, font, size, and more -->
+                  <p style="color:red;">This is a red paragraph.</p>
+            <!-- title attribute defines some extra information about an element -->
+                  <p title="I'm a tooltip">This is a paragraph.</p>
+            <!-- Always Quote Attribute Values (Not necessary) -->
+
+      <!-- HTML headings are defined with the <h1> to <h6> tags. -->
+      <!-- Browsers automatically add some white space (a margin) before and after a heading -->
+            <h1>This is heading 1</h1>
+            <h2>This is heading 2</h2>
+            <h3>This is heading 3</h3>
+            <h4>This is heading 4</h4>
+            <h5>This is heading 5</h5>
+            <h6>This is heading 6</h6>
+
+      <!-- HTML paragraphs are defined with the <p> tag: -->
+      <!-- A paragraph always starts on a new line, and is usually a block of text -->
+      <!-- automatically add some white space (a margin) before and after a paragraph -->
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+
+      <!-- <hr> tag add a horizontal line -->
+      <!-- <hr> tag defines a thematic break in an HTML page -->
+      <!-- <hr> element is used to separate content -->
+            <p>This is some text.</p>
+            <hr>
+            <p>This is some other text.</p>
+            <hr>
+
+      <!-- <br> element defines a line break -->
+      <p>This is<br>a paragraph<br>with line breaks.</p>
+
+      <!-- <pre> element defines preformatted text -->
+      <!-- this elements text display as it is written -->
+      <pre>
+            My Bonnie lies over the ocean.
+          
+            My Bonnie lies over the sea.
+          
+            My Bonnie lies over the ocean.
+          
+            Oh, bring back my Bonnie to me.
+      </pre>
+
+      <!-- style attribute is used to add styles to an element, such as color, font, size, and more. -->
+      <!-- Use the style attribute for styling HTML elements
+      Use background-color for background color
+      Use color for text colors
+      Use font-family for text fonts
+      Use font-size for text sizes
+      Use text-align for text alignment -->
+      <p style="background-color:powderblue;">This is a paragraph.</p>
+      <p style="color:red;">This is a paragraph.</p>
+      <p style="font-family:courier;">This is a paragraph.</p>
+      <p style="font-size:160%;">This is a paragraph.</p>
+      <p style="text-align:center;">Centered paragraph.</p>
+
+      <!-- Formatting elements -->
+      <!-- Formatting elements were designed to display special types of text: -->
+      <!-- <b> - Bold text -->
+            <b>Bold</b>
+            <!-- <strong> - Important text -->
+            <strong>Strong</strong>      
+            <!-- <i> - Italic text -->
+            <i>Italic</i>
+            <!-- <em> - Emphasized text -->
+            <em>Emphasized</em>
+            <!-- <mark> - Marked text -->
+            <mark>Marked</mark>
+            <!-- <small> - Smaller text -->
+            <small>Small</small>
+            <!-- <del> - Deleted text -->
+            <del>Deleted</del>
+            <!-- <ins> - Inserted text -->
+            <ins>Inserted</ins>
+            <!-- <sub> - Subscript text -->
+            <sub>Subscript</sub>
+            <!-- <sup> - Superscript text  -->
+            <sup>Superscripted</sup>
+
+      <!-- <blockquote> element defines a section that is quoted from another source. -->
+            <p>Here is a quote from WWF's website:</p>
+            <blockquote cite="http://www.worldwildlife.org/who/index.html">
+            For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+            </blockquote>
+
+      <!-- <q> tag defines a short quotation -->
+      <p>This is paraghraph <q>This is Q tag</q></p>
+
+      <!-- <abbr> tag defines an abbreviation and it has title attribute -->
+            <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+      <!-- <address> tag defines the contact information and usually renders in italic -->
+            <address>
+                  Written by John Doe.<br>
+                  Visit us at:<br>
+                  Example.com<br>
+                  Box 564, Disneyland<br>
+                  USA
+            </address>
+
+      <!-- <cite> tag defines the title of a creative work (e.g. a book, a poem, a song, a movie) and usually renders in italic-->
+      <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+      <!-- <bdo>(Bi-Directional Override) tag is used to override the current text direction -->
+      <bdo dir="rtl">This text will be written from right to left</bdo>
+
+      <!-- Colors -->
+      <!-- HTML supports 140 standard color names -->
+      <!-- You can set the background color for HTML elements -->
+      <h1 style="background-color:DodgerBlue;">Hello World</h1>
+      <p style="background-color:Tomato;">Lorem ipsum...</p>
+      <!-- You can set the color of text: -->
+      <h1 style="color:Tomato;">Hello World</h1>
+      <p style="color:DodgerBlue;">Lorem ipsum...</p>
+      <p style="color:MediumSeaGreen;">Ut wisi enim...</p>
+      <!-- You can set the color of borders: -->
+      <h1 style="border:2px solid Tomato;">Hello World</h1>
+      <h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+      <h1 style="border:2px solid Violet;">Hello World</h1>
+      <!-- colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values -->
+      <h1 style="background-color:rgb(255, 99, 71);">...</h1>
+      <h1 style="background-color:#ff6347;">...</h1>
+      <h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
+      <h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
+      <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
+      <!-- rgb(red, green, blue) -->
+      <!-- there are 256 x 256 x 256 = 16777216 possible colors! -->
+      <h1 style="background-color:rgb(238, 130, 238);">rgb(238, 130, 238)</h1>
+      <!-- rrggbb pattern -->
+      <h1 style="background-color:#ff0000;">#ff0000</h1>
+      <!-- HSL stands for hue, saturation, and lightness -->
+      <!-- Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.
+      Saturation is a percentage value. 0% means a shade of gray, and 100% is the full color.
+      Lightness is also a percentage value. 0% is black, and 100% is white. -->
+      <h1 style="background-color:hsl(346, 100%, 50%);">hsl(346, 100%, 0%)</h1>
+
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+ /* CSS stands for Cascading Style Sheets  */
+ /* CSS syntex is like selector{property: value;} */
+ /* here p is selector color isproperty and red is value */
+p {
+    color: red;
+    text-align: center;
+  }
+/* A CSS selector selects the HTML elements you want to style */
+
+/* Selector types */
+
+/* Element selector */
+h3{
+    color: cadetblue;
+}
+
+/* id */
+/* start with # and unique element */
+#para1{
+    text-align: center;
+}
+
+/* class */
+/* start with . */
+.para2{
+    text-align: left;
+}
+
+/* element followed by class */
+/* p element with class name 'center' */
+/* one element can have multiple class name */
+span.center{
+    color: saddlebrown;
+}
+
+/* universal selector */
+*{
+    text-align: left;
+    color: firebrick;
+}
+
+/* grouping selector */
+/* seperated by , */
+h1,h2,pre{
+    text-align: center;
+    color:gold;
+}
+
+/* color */
+/* colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values */
+/* rgb(255, 99, 71) -- values for red green and blue between o to 255
+#ff6347 -- values from 00 to ff
+hsl(9, 100%, 64%) -- hsl stands for hue saturation and lightness. Hue is a degree of color 0 is red,120 is green and 240 is blue
+-- saturation is percentage value 0% means shade of grey and 100% is full color
+-- Lightness is also a percentage. 0% is black, 50% is neither light or dark, 100% is white
+rgba(255, 99, 71, 0.5) -- value of alpha is from o to 1 to show transparancy
+hsla(9, 100%, 64%, 0.5)*/
+h4{
+    background-color: cadetblue;
+    border-color: blue;
+}
+
+/* background-color */
+div{
+    background-color: cyan;
+}
+
+/* opacity */
+/* sets opacity of element for background color opacity you can use alpha(RGBA) colors */
+.opacity{
+    opacity: 0.4;
+}
+
+/* background-image */
+/* by default image is repeated */
+/* When using a background image, use an image that does not disturb the text */
+p{
+    background-image: url(images/temp3.jpeg);
+    height: 300px;
+}
+
+/* background-repeat */
+/* background-position */
+/* background-position property is used to specify the position of the background image */
+.img1{
+    background-image: url(images/temp4.jpeg);
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+    background-position:bottom right;
+    background-attachment: fixed;
+}
+
+/* background-attachment */
+/* choose to background image should scroll or be fixed */
+
+/* background-shorthand */
+/* we can specify all background properties in one declaration */
+/* background: #ffffff url("img_tree.png") no-repeat right top */
+/* sequence : color image repeat attachment position */ 

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <head> element is a container for the following elements: <title>, <style>, <meta>, <link>, <script>, and <base> -->
+    <!-- <head> element is a container for metadata (data about data) -->
+        <!-- Metadata is not displayed and typically define the document title, character set, styles, scripts, and other meta information -->
+        <!-- The <title> element:
+        defines a title in the browser toolbar.
+        provides a title for the page when it is added to favorites.
+        displays a title for the page in search engine-results. -->
+        <!-- <style> element is used to define style information for a single HTML page -->
+        <!-- <link> element defines the relationship between the current document and an external resource -->
+
+    <!-- metadata will not be displayed on the page, but is used by browsers (how to display content or reload page), 
+        by search engines (keywords), and other web services -->
+
+        <!-- Define character set -->
+        <meta charset="UTF-8">
+        <!-- Define description for web page -->
+        <meta name="description" content="Free Web tutorials">
+        <!-- Define keywords for SEO -->
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <!-- Definne author of page -->
+        <meta name="author" content="John Doe">
+        <!-- Refresh document every 30 seconds -->
+        <meta http-equiv="refresh" content="30">
+        <!-- Setting the viewport to make your website look good on all devices -->
+        <!-- viewport is the user's visible area of a web page -->
+        <!-- width=device-width part sets the width of the page to follow the screen-width of the device -->
+        <!-- initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browse -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <base> Element -->
+    <!-- <base> element specifies the base URL and/or target for all relative URLs in a page -->
+    <!-- <base> tag must have either an href or a target attribute present, or both -->
+    <!-- can only be one single <base> element in a document! -->
+    <base href="https://www.w3schools.com/" target="_blank">
+
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        .left {
+          background-color: #2196F3;
+          padding: 20px;
+          float: left;
+          width: 20%; /* The width is 20%, by default */
+        }
+        
+        .main {
+          background-color: #f1f1f1;
+          padding: 20px;
+          float: left;
+          width: 60%; /* The width is 60%, by default */
+        }
+        
+        .right {
+          background-color: #04AA6D;
+          padding: 20px;
+          float: left;
+          width: 20%; /* The width is 20%, by default */
+        }
+        
+        /* Use a media query to add a break point at 800px: */
+        @media screen and (max-width: 800px) {
+          .left, .main, .right {
+            width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+          }
+        }
+        </style>
+</head>
+<body>
+    <!-- base element checking -->
+    <img src="images/stickman.gif" width="24" height="39" alt="Stickman">
+    <a href="#">HTML base Tag</a>
+
+    <!-- HTML Layout Elements and Techniques -->
+        <!-- <header> - Defines a header for a document or a section
+        <nav> - Defines a set of navigation links
+        <section> - Defines a section in a document
+        <article> - Defines an independent, self-contained content
+        <aside> - Defines content aside from the content (like a sidebar)
+        <footer> - Defines a footer for a document or a section
+        <details> - Defines additional details that the user can open and close on demand
+        <summary> - Defines a heading for the <details> element -->
+
+        <!-- There are four different techniques to create multicolumn layouts.  -->
+        <!-- CSS framework
+            CSS float property
+            CSS flexbox
+            CSS grid -->
+
+
+    <!-- HTML Responsive Web Design -->
+    <!-- Responsive web design is about creating web pages that look good on all devices! -->
+        <!-- Responsive Images -->
+        <!-- If the CSS width property is set to 100%, the image will be responsive and scale up and down -->
+        <!-- If the max-width property is set to 100%, the image will scale down if it has to, but never scale up to be larger than its original size -->
+
+        <!-- Responsive text size -->
+        <!-- text size can be set with a "vw" unit, which means the "viewport width" -->
+        <!-- Viewport is the browser window size. 1vw = 1% of viewport width -->
+        <h1 style="font-size:10vw;">Responsive Text</h1>
+        <p style="font-size:5vw;">Resize the browser window to see how the text size scales.</p>
+        <p style="font-size:5vw;">Use the "vw" unit when sizing the text. 10vw will set the size to 10% of the viewport width.</p>
+        <p>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.</p>
+
+        <!-- Media Queries
+        In addition to resize text and images, it is also common to use media queries in responsive web pages.
+        With media queries you can define completely different styles for different browser sizes. -->
+        <h2>Media Queries</h2>
+        <p>Resize the browser window.</p>
+
+        <p>Make sure you reach the breakpoint at 800px when resizing this frame.</p>
+
+        <div class="left">
+        <p>Left Menu</p>
+        </div>
+
+        <div class="main">
+        <p>Main Content</p>
+        </div>
+
+        <div class="right">
+        <p>Right Content</p>
+        </div>
+</body>
+</html>

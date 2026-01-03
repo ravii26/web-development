@@ -1,0 +1,137 @@
+/* Text Effects */
+/* text-overflow */
+/* only works with overflow property */
+p.test1 {
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid #000000;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+p.test2 {
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid #000000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* word-breaking */
+/* allows to break a word in middle of text */
+p.test3 {
+    width: 140px;
+    border: 1px solid #000000;
+    word-break: keep-all;
+}
+
+p.test4 {
+    width: 140px;
+    border: 1px solid #000000;
+    word-break: break-all;
+}
+
+/* word-wrap */
+p.test {
+    width: 11em;
+    border: 1px solid #000000;
+    word-wrap: break-word;
+}
+
+/* can also add writing mode to show vertical or horizontal */
+span.test2 {
+    writing-mode: vertical-rl;
+}
+
+
+/* @font-rule */
+/* you can use your own font family as follows */
+@font-face {
+    font-family: myFirstFont;
+    src: url("sansation_light.woff");
+    font-weight: bold;
+}
+
+div {
+    font-family: myFirstFont;
+}
+
+/* 2D transform */
+/* use transform attribute */
+/* translate method to move element from current position */
+.t1 {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: translate(10px, 10px);
+}
+
+/* rotate from current position and can also apply negative degree */
+div#myDiv {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: rotate(20deg);
+}
+
+/* scale method for increase or decrease size */
+/* width and height parameters */
+/* can also use scaleX(width) and scaleY(height) */
+.t3 {
+    width: 300px;
+    height: 100px;
+    margin-left: 150px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: scale(1.5, 1.5);
+}
+
+/* skew() method to skew an element in degree */
+/* can also use skewX() and skewY() */
+.t4 {
+    width: 300px;
+    height: 100px;
+    margin-left: 150px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: skew(20deg, 15deg);
+}
+
+/* matrix() method combines all the 2D transform methods into one */
+/* matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
+.t5 {
+    width: 300px;
+    height: 100px;
+    margin-left: 150px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+
+
+/* 3D transform */
+/* rotateX() , rotateY() and rotateZ() method */
+.t6 {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: rotateX(150deg);
+}
+.t7 {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: rotateY(150deg);
+}
+.t8 {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: rotateZ(150deg);
+}
+/* can learn more about transform in detail on W3S */

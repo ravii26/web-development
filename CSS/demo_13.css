@@ -1,0 +1,129 @@
+/* Style HTML Elements With Specific Attributes */
+
+a[target] {
+    background-color: yellow;
+}
+
+a[target="_blank"] {
+    background-color: rgb(181, 126, 32);
+}
+
+/* [attribute~="value"] selector is used to select elements with an attribute value containing a specified word */
+[title~="flower"] {
+    border: 5px solid yellow;
+}
+
+/* for exactly specified words or the specified value followed by a hyphen (-) [attribute|="value"] */
+[class|="top"] {
+    background: yellow;
+}
+
+/* [attribute^=value] for value start with specific word */
+/* [attribute$=value] for value end with specific word */
+/* [attribute*=value] for value containing word or a part in a word */
+/* The attribute selectors can be useful for styling forms without class or ID */
+
+
+/* Form-validation */
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* you can use border-radius border-bottom and :focus values according to need */
+/* You can add resize: none to trextarea to avoid resizing by user */
+
+/* CSS counters */
+/* they are used to check how many times elements are used and if you want to display them */
+/* CSS counters are like "variables". The variable values can be incremented by CSS rules  */
+/*  counter-reset - Creates or resets a counter
+    counter-increment - Increments a counter value
+    content - Inserts generated content
+    counter() or counters() function - Adds the value of a counter to an element */
+/* You can use counters() for nested elements */
+body {
+    counter-reset: count;
+}
+
+h2::before {
+    counter-increment: count;
+    content: "Section " counter(count) ": ";
+}
+
+p::before {
+    counter-increment: count;
+    content: "Section " counter(count) ": ";
+}
+
+/* A website is often divided into headers, menus, content and a footer */
+
+/* CSS units */
+/* css has many different units for length like px em*/
+/* there is no whitespace between value and unit */
+/* px cm mm in are absolute length and not recommended for different types of screen */
+/* vm em are relative length */
+
+/* CSS Specificity Hierarchy */
+/* Priority list */
+/* 1.Inline CSS -- 1 */
+/* 2.ID selector -- 10*/
+/* 3.Class selector  -- 100*/
+/* 4.Element selector -- 1000*/
+/* If equal then latest will win */
+/* ID have higher than attribute */
+/* The universal selector (*) and inherited values are ignored! */
+
+/* !important rule in CSS is used to add more importance to a property/value than normal */
+/* only way to override !important is to give another !important */
+.h2 {
+    color: #45a049;
+}
+
+#h3 {
+    color: yellow;
+}
+
+p {
+    color: red !important;
+}
+
+/* Math function */
+/* calc() */
+#div1 {
+    position: absolute;
+    left: 50px;
+    /* count total width and subtract 100px from it */
+    width: calc(100% - 100px);
+    border: 1px solid black;
+    background-color: yellow;
+    padding: 5px;
+}
+/* max() and min() function select max and min value from given values */
+/* max(100%,300px) */

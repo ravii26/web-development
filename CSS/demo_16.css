@@ -1,0 +1,91 @@
+/* Shadows */
+/* With CSS you can add shadow to text and to elements */
+
+#s1 {
+    text-shadow: 2px 2px;
+    /* horizontal and vertical */
+}
+
+#s2 {
+    text-shadow: 2px 2px red;
+}
+
+#s3 {
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    /* for blur effect add one more size and can also add multiple shadows*/
+}
+
+#s4 {
+    /* white text with black shadow */
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#s5 {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+/* can also create border to text */
+#s6 {
+    color: coral;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/* Box-shadow */
+
+.b1 {
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    background-color: coral;
+    box-shadow: 10px 10px 5px lightblue, 5px 5px 5px blue, 10px 10px 5px red;
+    /* same as text-shadow and can add multiple shadows */
+}
+
+.b2 {
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    background-color: coral;
+    box-shadow: 10px 10px 5px 12px lightblue;
+    /* 12px use to spread */
+}
+
+.b3 {
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    background-color: coral;
+    box-shadow: 10px 10px 5px lightblue inset;
+    /* same as text-shadow */
+}
+
+/* Text Card */
+div.card {
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+div.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+}
+
+div.container {
+    padding: 10px;
+}
+
+/* Image Card */
+div.polaroid {
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+  }
+  
+  div.container1 {
+    padding: 10px;
+  }

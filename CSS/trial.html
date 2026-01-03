@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+    </head>
+    <body>
+        <input id="inp" type="file" onchange="readFile()"><br>
+        <p id="b64"></p>
+        <img id="img" height="150">
+        <script>
+            function readFile() {
+                var file = document.getElementById("inp").files[0];
+                console.log(file);
+        
+                const FR = new FileReader();
+                    
+                FR.addEventListener("load", function(evt) {
+                    document.getElementById("img").src= evt.target.result;
+                    document.getElementById("b64").textContent = evt.target.result
+                }); 
+                    
+                FR.readAsDataURL(document.getElementById("inp").files[0]);
+                console.log(FR);
+            }
+
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- Guide -->
+<!-- Always declare the document type as the first line in your document -->
+<!-- Use Lowercase Element Names -->
+<!-- Close All HTML Elements -->
+<!-- Use Lowercase Attribute Names -->
+<!-- Always Quote Attribute Values -->
+<!-- Always Specify alt, width, and height for Images -->
+<!-- Avoid Long Code Lines -->
+<!-- Do not add blank lines, spaces, or indentations without a reason. -->
+<!-- add blank lines to separate large or logical code blocks -->
+<!-- add two spaces of indentation. Do not use the tab key -->
+<!-- Never Skip the <title> Element -->
+<!-- Add the lang Attribute -->
+<!-- There is no difference between the .htm and .html file extensions! -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- HTML computer code -->
+        <!-- The <kbd> element defines keyboard input
+        The <samp> element defines sample output from a computer program
+        The <code> element defines a piece of computer code
+        The <var> element defines a variable in programming or in a mathematical expression
+        Only <var> displays in italic form all others are displays in default font -->
+
+            <pre>
+                <!-- code element does not preserve whitespaces or breakline that's why it is written in pre tag -->
+                <code>
+                x = 5;
+                y = 6;
+                z = x + y;
+                </code>
+            </pre>
+            <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
+            <p><samp>File not found.<br>Press F1 to continue</samp></p>
+            <p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+
+
+        <!-- Html Semantic Elements -->
+        <!-- Semantic elements = elements with a meaning -->
+        <!-- non-semantic elements: <div> and <span> - Tells nothing about its content -->
+        <!-- semantic elements: <form>, <table>, and <article> - Clearly defines its content -->
+
+        <!-- <section> Element -->      
+        <section>
+            <h1>WWF</h1>
+            <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+        </section>
+        
+        <section>
+            <h1>WWF's Panda symbol</h1>
+            <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+        </section>
+  
+        <!--  <article> element specifies independent, self-contained content -->
+            <article>
+                <h2>Google Chrome</h2>
+                <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+                </article>
+                
+                <article>
+                <h2>Mozilla Firefox</h2>
+                <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+                </article>
+                
+                <article>
+                <h2>Microsoft Edge</h2>
+                <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+                </article>
+
+        <!-- <header> element represents a container for introductory content or a set of navigational links -->
+                    <!-- <header> element typically contains:
+                    one or more heading elements (<h1> - <h6>)
+                    logo or icon
+                    authorship information -->
+                    <!-- <header> cannot be placed within a <footer>, <address> or another <header> element -->
+
+        <!-- <nav> element defines a set of navigation links. -->
+            <nav>
+                <a href="/html/">HTML</a> |
+                <a href="/css/">CSS</a> |
+                <a href="/js/">JavaScript</a> |
+                <a href="/jquery/">jQuery</a>
+              </nav>
+
+        <!-- <aside> element defines some content aside from the content it is placed in (like a sidebar) -->
+            <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+            <aside>
+            <h4>Epcot Center</h4>
+            <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+            </aside>
+
+        <!-- <figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+                The <figcaption> tag defines a caption for a <figure> element. The <figcaption> element can be placed as the first or as the last child of a <figure> element.     
+                The <img> element defines the actual image/illustration -->
+                <figure>
+                    <img src="pic_trulli.jpg" alt="Trulli">
+                    <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
+                  </figure>
+
+        <!-- <footer> element defines a footer for a document or section -->
+            <footer>
+                <p>Author: Hege Refsnes</p>
+                <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+              </footer>
+</body>
+</html>

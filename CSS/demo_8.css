@@ -1,0 +1,56 @@
+/* display property is used to change the default display behavior of HTML elements */
+/* block-level element ALWAYS starts on a new line and takes up the full width available */
+/* inline element DOES NOT start on a new line and only takes up as much width as necessary */
+/* display property has many values */
+/* display: none; is commonly used with JavaScript to hide and show elements without deleting and recreating them. */
+/* display: none; does not take up any space. */
+/* visibility:hidden; also hides an element. but it will take some space and effect the page layout*/
+
+/* width, max-width and margin: auto */
+/* max-width adjust element horizontally where only width property add scrollbar to webpage */
+
+/* position */
+/* first apply position and then apply top right bottom top */
+/* elements are static bydefault and left right top bottom doesn't work on these elements*/
+
+/* relative; is positioned relative to its normal position */
+div.relative {
+    position: relative;
+    width: 400px;
+    top: 100px;
+    height: 200px;
+    border: 3px solid #73AD21;
+}
+
+
+/* position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. */
+div.fixed {
+    position: fixed;
+    right: 500px;
+    top: 300px;
+    width: 300px;
+    border: 3px solid #73AD21;
+}
+
+
+/* position: absolute; is positioned relative to the nearest positioned ancestor  */
+/* Absolute positioned elements are removed from the normal flow, and can overlap elements */
+/* you can write text on image by using absolute and relative position */
+div.absolute {
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+}
+
+/* position: sticky; is positioned based on the user's scroll position */
+/*  It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed) */
+/* You must also specify at least one of top, right, bottom or left for sticky positioning to work */
+div.sticky {
+    position: sticky;
+    top: 100px;
+    background-color: green;
+    border: 2px solid #4CAF50;
+  }

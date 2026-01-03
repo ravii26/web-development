@@ -1,0 +1,183 @@
+/* Tool-tip */
+/* A tooltip is often used to specify extra information about something when the user moves the mouse pointer over an element */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* for right tooltip 
+.tooltip .tooltiptext {
+  top: -5px;
+  left: 105%;
+} and for left give right:105% */
+
+/* for top tooltip
+.tooltip .tooltiptext {
+  width: 120px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip 
+} for bottom give top:100% */
+/* can also give arrow to tooltip */
+.tooltip2 .tooltiptext2::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltip2 .tooltiptext2 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+/* for fade in tooltip */
+.tooltip1 .tooltiptext1 {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip1:hover .tooltiptext1 {
+    opacity: 1;
+}
+
+/* Image as thumbnail */
+.img1 {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 300px;
+}
+
+.img2 {
+    /* for responsive image */
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+    /* for transparancy */
+    opacity: 0.7;
+}
+
+.img3 {
+    /* for center image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+/* for image cards */
+div.polaroid {
+    width: 20.15%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+
+div.container {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+/* filter property adds visual effects (like blur and saturation) to an element */
+.blur {
+    filter: blur(4px);
+}
+
+.brightness {
+    filter: brightness(250%);
+}
+
+.contrast {
+    filter: contrast(180%);
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+.huerotate {
+    filter: hue-rotate(180deg);
+}
+
+.invert {
+    filter: invert(100%);
+}
+
+.opacity {
+    filter: opacity(50%);
+}
+
+.saturate {
+    filter: saturate(7);
+}
+
+.sepia {
+    filter: sepia(100%);
+}
+
+.shadow {
+    filter: drop-shadow(8px 8px 10px green);
+}
+
+/* Write text on image */
+.container1 {
+    position: relative;
+}
+
+.center1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+.img4 {
+    width: 100%;
+    height: 300px;
+    opacity: 0.3;
+}
+/* for bottom right text 
+.bottomright {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+*/

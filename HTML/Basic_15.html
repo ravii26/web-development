@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Multimedia -->
+    <!-- Multimedia on the web is sound, music, videos, movies, and animations -->
+    <!-- Only MP4, WebM, and Ogg video are supported by the HTML standard -->
+
+    <!-- <audio> and <video> element -->
+    <!-- Always add controls attribute to make controls visible -->
+    <!-- <source> element allows you to specify alternative video files according to recognized format -->
+    <!-- Always specify height and width attribute -->
+    <!-- text between these tags will only be displayed in browsers that do not support the <video> element -->
+    <!-- We can use javascript to add buttons for specific tasks -->
+    <!-- autoplay -->
+    <!-- muted -->
+        <video width="320" height="240" controls autoplay muted>
+            <source src="Videos/stock-2.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video><br>
+        <audio controls>
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+
+
+    <!-- object and embed elements -->
+    <!-- these element defines an embedded object like image pdf reader player within an HTML document -->
+    <object width="100%" height="500px" data="Basic_4.html"></object>
+    <embed src="images/temp1.jpeg"/>
+
+    <!-- Youtube videos -->
+    <!-- YouTube will display an id (like tgbNymZ7vqY), when you save (or play) a video -->
+    <!-- You can use this id -->
+    <!-- use iframe src to use youtube videos -->
+    <iframe width="420" height="315"
+    src="https://www.youtube.com/embed/tgbNymZ7vqY">
+    </iframe>
+    <!-- Add mute=1 after autoplay=1 to let your video start playing automatically (but muted) -->
+    <iframe width="420" height="315"
+    src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+    </iframe>
+    <!-- Add loop=1 to let your video loop forever -->
+    <iframe width="420" height="315"
+    src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1&playlist=tgbNymZ7vqY&loop=1">
+    </iframe>
+    <!-- Add controls=0 to not display controls in the video player -->
+    <iframe width="420" height="315"
+    src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
+    </iframe>
+</body>
+</html>

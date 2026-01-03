@@ -1,0 +1,82 @@
+/* gradients let you display smooth transitions between two or more specified colors */
+/* Linear Radial and Conic */
+
+
+/* Linear-Gradient */
+#grad1 {
+    height: 200px;
+    background-image: linear-gradient(red, yellow);
+}
+
+/* you can also add direction to linear gradient */
+#grad2 {
+    height: 200px;
+    /* you can use transparency */
+    background-image: linear-gradient(to right, rgba(87, 203, 230, 0), RGBA(256, 214, 214, 1));
+}
+
+#grad3 {
+    height: 200px;
+    background-image: linear-gradient(to bottom right, red, yellow, black, blue);
+}
+
+/* you can also add angle property */
+#grad4 {
+    height: 200px;
+    background-image: linear-gradient(75deg, red, yellow);
+}
+
+/* you can also add repeating gradient */
+#grad5 {
+    height: 200px;
+    background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+}
+
+/* Radial Gradient */
+/* A radial gradient is defined by its center. */
+#grad6 {
+    height: 200px;
+    background-image: radial-gradient(red, yellow, green);
+}
+
+#grad7 {
+    height: 200px;
+    background-image: radial-gradient(red 5%, yellow 10%, green 60%);
+}
+
+#grad8 {
+    height: 150px;
+    width: 200px;
+    background-image: radial-gradient(circle, red, yellow, green);
+}
+
+/* you can also add repeating-radial-gradient */
+#grad9 {
+    height: 200px;
+    background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+}
+
+/* Conic gradient */
+/* A conic gradient is a gradient with color transitions rotated around a center point */
+/* By default, angle is 0deg and position is center */
+
+#grad10 {
+    height: 200px;
+    width: 250px;
+    background-image: conic-gradient(red, yellow, blue, orange);
+}
+
+#grad11 {
+    height: 200px;
+    width: 250px;
+    background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+    border-radius: 50%;
+}
+
+#grad12 {
+    height: 200px;
+    width: 250px;
+    background-image: conic-gradient(from 90deg,red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+    border-radius: 50%;
+}
+/* you can also add repeating-conic-gradient */

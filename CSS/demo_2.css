@@ -1,0 +1,90 @@
+/* border-style */
+/* dotted/dashed/solid/double/none/hidden... */
+/* can have four values upto top bottom right left */
+/* border-width */
+/* px cm or thin medium or thick */
+/* you can give style on individual sides */
+.border1{
+    border-style:dashed dotted solid double;
+    border-width:10px 8px 4px 5px;
+    border-color:blue yellow red violet;
+}
+
+/* border shorthand : width style color */
+/* border-radius */
+.border2{
+    border:5px solid red;
+    border-bottom: 10px dotted yellow;
+    border-radius: 10px;
+}
+
+/* Margins are used to create space around elements , outside of any defined borders*/
+/* you can specify all individual sides or use shorthand (top,right,bottom,left) like margin-top*/
+
+/* margin-collapse */
+/* Sometimes the margin2 element has a bottom margin of 50px and the margin3 element has a top margin set to 20px */
+/* would be a total of 70px (50px + 20px). But due to margin collapse, the actual margin ends up being 50px */
+.margin {
+    border: 1px solid #4CAF50;
+    margin: auto;
+    /* browser choose itself */
+    /* take elements width ,devide it and give it to both sides */
+    /* horizontally center the element */
+  }
+
+.margin1{
+    border:2px solid green;
+    margin:10px;
+    /* negative values are allowed */
+}
+
+.margin2{
+    border:2px solid yellow;
+    margin:3% /* % calculates from full width */
+}
+
+.margin3{
+    border:3px solid blue;
+    margin:inherit;
+    /* inherit from parent element */
+}
+
+/* padding */
+/* Padding is used to create space around an element's content, inside of any defined borders */
+/* the padding for each side of an element is possible (top,right,bottom,left) */
+.padding{
+    border:2px solid gold;
+    padding:5px;
+}
+
+.padding1{
+    border:2px dotted red;
+    padding:20px;
+}
+
+.padding2{
+    border:2px solid khaki;
+    padding:inherit;
+}
+
+.padding3{
+    border:2px solid palevioletred;
+    padding:3%;
+}
+/* CSS width property specifies the width of the element's content area.
+The content area is the portion in                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           6 side the padding, border, and margin of an element */
+/* so if we apply padding then it will be added to the total width of the element */
+/*  element is given a width of 300px. However, the actual width of the <div>
+ element will be 350px (300px + 25px of left padding + 25px of right padding) */
+.padding4{
+    border:5px dashed lawngreen;
+    padding: 25px;
+    width: 500px;
+}
+/* to keep the width 300px you can use bos-sizing property*/
+.padding5{
+    border:5px dashed lawngreen;
+    padding: 25px;
+    width: 500px;
+    box-sizing: border-box;
+}

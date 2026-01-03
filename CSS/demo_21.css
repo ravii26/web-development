@@ -1,0 +1,147 @@
+/* object-fit property is used to specify how an <img> or <video> should be resized to fit its container */
+/* Look at the following image from Paris. This image is 400 pixels wide and 300 pixels high */
+
+.fill {
+    object-fit: fill;
+}
+
+/*The image keeps its aspect ratio, but is resized to fit within the given dimension */
+.contain {
+    object-fit: contain;
+}
+
+/* The image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit */
+.cover {
+    object-fit: cover;
+}
+
+/* he image is scaled down to the smallest version of none or contain */
+.scale-down {
+    object-fit: scale-down;
+}
+
+.none {
+    object-fit: none;
+}
+
+/* object-position property is used to specify how an <img> or <video> should be positioned within its container */
+/* we use object-fit: cover; */
+/* but the part of the image that is shown, is not positioned as we want */
+.obj {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 15% 100%;
+    /* can also try this */
+    /* object-position: 80% 100%; */
+}
+
+/* image-masking */
+.mask1 {
+    /* not working in current browser */
+    /* can also use leniar gradient and svg to apply masking */
+    -webkit-mask-image: url(images/w3logo.png);
+    mask-image: url(images/w3logo.png);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+/* CSS buttons */
+.button {
+    background-color: #04AA6D;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #04AA6D;
+}
+
+.button1:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* can add arrow pressed fade or ripple effect to  button */
+/* Arrow button */
+.button2 {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* Pressed Button */
+.button3 {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.button3:hover {
+    background-color: #3e8e41
+}
+
+.button3:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}

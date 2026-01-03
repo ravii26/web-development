@@ -1,0 +1,193 @@
+/* CSS Transition */
+/* If the duration part is not specified, the transition will have no effect, because the default value is 0 */
+/* transition-property, transition-duration transition-timing-function  transition-delay */
+/* can also use only transition */
+/* The transition effect will start when the specified CSS property changes value */
+/* transition-delay property specifies a delay (in seconds) for the transition effect */
+.a1 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 4s;
+}
+
+.a1:hover {
+    width: 300px;
+    height: 300px;
+}
+
+.a2 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s linear 1s;
+    /* can use all in one attribute */
+}
+
+.a3 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+    transition-timing-function: ease;
+}
+
+.a4 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+    transition-timing-function: ease-in;
+}
+
+.a5 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.a6 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+    transition-timing-function: ease-out;
+}
+
+div:hover {
+    width: 300px;
+}
+
+/* Transition + Transformation */
+.a7 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.a7:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+}
+
+/* CSS allows animation of HTML elements without using JavaScript! */
+/* To use CSS animation, you must first specify some keyframes for the animation */
+/* Keyframes hold what styles the element will have at certain times */
+/* When you specify CSS styles inside the @keyframes rule, the animation will gradually 
+ change from the current style to the new style at certain times */
+/* To get an animation to work, you must bind the animation to an element */
+/* animation-duration property defines how long an animation should take to complete.
+ If the animation-duration property is not specified, no animation will occur */
+/* when finished back to original */
+/* animation-delay property specifies a delay for the start of an animation */
+/* Negative values are also allowed */
+/* animation-iteration-count property specifies the number of times an animation should run (infinite is also possible)*/
+/* animation-direction property specifies whether an animation should be played forwards, backwards or in alternate cycles */
+/* animation-timing-function property specifies the speed curve of the animation */
+/* animation-fill-mode property specifies a style for the target element when the animation is not playing (before it starts, after it ends, or both) 
+ values are none backwords forwards both.. */
+/* div {
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+  Shorthand ->
+  div {
+  animation: example 5s linear 2s infinite alternate;
+} */
+
+.anime1 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@keyframes example {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: yellow;
+    }
+}
+
+.anime2 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example1;
+    animation-duration: 4s;
+}
+
+@keyframes example1 {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: green;
+    }
+}
+
+@keyframes example3 {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+/* The element to apply the animation to */
+.anime3 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: example3;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}

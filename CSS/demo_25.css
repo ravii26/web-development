@@ -1,0 +1,60 @@
+/* viewport is the user's visible area of a web page */
+/* <meta name="viewport" content="width=device-width, initial-scale=1.0"> */
+/*  width=device-width part sets the width of the page to follow the screen-width of the device */
+
+
+/* A responsive grid-view often has 12 columns, and has a total width of 100%, and will shrink and expand as you resize the browser window */
+* {
+    box-sizing: border-box;
+}
+
+/* @media only screen and (max-width: 768px) {
+ For mobile phones: 
+  [class*="col-"] {
+    width: 100%;
+  }
+} */
+
+/* Mobile First means designing for mobile before designing for desktop or any other device (This will make the page display faster on smaller devices). */
+/* 
+/* Extra small devices (phones, 600px and down) 
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) 
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) 
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) 
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {...} */
+
+/* CSS properties that will only apply when the browser window is wider than its height, a so called "Landscape" orientation */
+/* @media only screen and (orientation: landscape) {
+    body {
+      background-color: lightblue;
+    }
+  } */
+
+/* An HTML element becomes a grid container when its display property is set to grid or inline-grid */
+/* column-gap property sets the gap between the columns */
+/* row-gap property sets the gap between the rows */
+/* .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+} */
+/* grid-template-columns property defines the number of columns in your grid layout, and it can define the width of each column */
+/* .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+} */
+/* .grid-container {
+  display: grid;
+  grid-template-rows: 80px 200px;
+} */
